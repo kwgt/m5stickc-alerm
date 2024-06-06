@@ -1,0 +1,9 @@
+Pipfile
+Pipfile.lock
+tags
+compile_flags.txt
+*.bak
+*.swp
+._*
+.DS_Store
+.pio
