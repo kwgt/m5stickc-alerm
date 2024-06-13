@@ -1,3 +1,9 @@
+/*
+ * Alarm timer application for M5StickC with MiniEncoderHAT
+ *
+ *  Copyright (C) 2024 Hiroshi Kuwagata <kgt9221@gmail.com>
+ */
+
 #include <M5Unified.h>
 
 #include <freertos/FreeRTOS.h>
@@ -264,7 +270,8 @@ read_encoder_state(int* dst1, bool* dst2)
 /**
  * 秒経過音再生
  */
-static void beep1()
+static void
+beep1()
 {
   switch (soundMode) {
   case SOUND_MODE1:
@@ -281,7 +288,8 @@ static void beep1()
 /**
  * 10秒経過音再生
  */
-static void beep2()
+static void
+beep2()
 {
   switch (soundMode) {
   case SOUND_MODE1:
@@ -298,7 +306,8 @@ static void beep2()
 /**
  * タイムアウト音再生
  */
-static void beep3()
+static void
+beep3()
 {
   switch (soundMode) {
   case SOUND_MODE1:
@@ -315,7 +324,8 @@ static void beep3()
 /**
  * カウントダウン開始・停止音再生
  */
-static void beep4()
+static void
+beep4()
 {
   switch (soundMode) {
   case SOUND_MODE1:
@@ -332,7 +342,8 @@ static void beep4()
 /**
  * カウント値変更操作音再生
  */
-static void beep5()
+static void
+beep5()
 {
   switch (soundMode) {
   case SOUND_MODE1:
